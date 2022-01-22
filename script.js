@@ -33,10 +33,11 @@ projects.forEach((project, i) => {
     if (details.open == false) {
       imagesToExpand.forEach((image, i) => {
         image.style.display = "block"
-        console.log(imagesToExpand)
+        
       })
     }
     console.log(details.classList.contains("open"));
+    console.log(imagesToExpand)
   })
 
 });
