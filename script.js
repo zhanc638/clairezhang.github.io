@@ -19,7 +19,7 @@ homeButton.addEventListener("click", function(){
 let projects = document.querySelectorAll("div.projects")
 
 projects.forEach((project, i) => {
-  let imagesToExpand = project.querySelectorAll("img.expand")
+  let imagesToExpand = project.querySelectorAll(".expand")
   let details = project.querySelector("details")
   let summary = project.querySelector("summary")
 
