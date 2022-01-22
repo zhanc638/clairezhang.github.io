@@ -20,6 +20,7 @@ let projects = document.querySelectorAll("div.projects")
 
 projects.forEach((project, i) => {
   let imagesToExpand = project.querySelectorAll(".expand")
+  console.log(imagesToExpand)
   let details = project.querySelector("details")
   let summary = project.querySelector("summary")
 
