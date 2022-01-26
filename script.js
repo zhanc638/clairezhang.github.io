@@ -14,13 +14,14 @@ homeButton.addEventListener("click", function(){
 
 
 
+
 //Expandig images
 
 let projects = document.querySelectorAll("div.projects")
 
 projects.forEach((project, i) => {
   let imagesToExpand = project.querySelectorAll(".expand")
-  
+
   let details = project.querySelector("details")
   let summary = project.querySelector("summary")
 
@@ -33,7 +34,7 @@ projects.forEach((project, i) => {
     if (details.open == false) {
       imagesToExpand.forEach((image, i) => {
         image.style.display = "block"
-        
+
       })
     }
     console.log(details.classList.contains("open"));
