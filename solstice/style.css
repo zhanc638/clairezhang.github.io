@@ -1,0 +1,214 @@
+@font-face {
+  font-family: 'ABC Diatype Mono Bold';
+  src: url('../assets/type/ABCDiatypeMono-Bold.woff2') format('woff2'),
+    url('../assets/type/ABCDiatypeMono-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ABC Diatype Mono Regular';
+  src: url('../assets/type/ABCDiatypeMono-Regular.woff2') format('woff2'),
+    url('../assets/type/ABCDiatypeMono-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ABC Diatype Mono Light';
+  src: url('../assets/type/ABCDiatypeMono-Light.woff2') format('woff2'),
+    url('../assets/type/ABCDiatypeMono-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ABC Diatype Mono ThinItalic';
+  src: url('../assets/type/ABCDiatypeMono-ThinItalic.woff2') format('woff2'),
+    url('../assets/type/ABCDiatypeMono-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ABC Diatype Mono Thin';
+  src: url('../assets/type/ABCDiatypeMono-Thin.woff2') format('woff2'),
+    url('../assets/type/ABCDiatypeMono-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  font-family: 'ABC Diatype Mono Light';
+  font-size: 15px;
+  color: black;
+  text-align: justify;
+  overflow-y: hidden;
+}
+
+#sidebar {
+  width: 30%;
+  height: 100vh;
+  /* background-color: grey; */
+  padding: 1.5em;
+  overflow-y: scroll;
+}
+
+#portfolio {
+  /* background-color: blue; */
+  width: 70%;
+  padding: 1.5em;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+#about {
+  width: 70%;
+  height: 100vh;
+  padding: 1.5em;
+  display: none;
+
+  overflow-y: scroll;
+
+}
+
+#name {
+  margin-bottom: 1.5em;
+  border-bottom: 2px solid black;
+  line-height: 1.5;
+}
+
+#bio {
+  margin-bottom: 1.5em;
+}
+
+#pages {}
+
+div.topbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1.5em;
+  border-bottom: 2px solid black;
+  line-height: 1.5;
+
+}
+
+div.projects {
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+}
+
+div.summary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1.5em;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+video {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.expand {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: red;
+}
+
+summary {
+  cursor: pointer;
+  gap: 1.5em;
+}
+
+/* resume code */
+#resume {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 8vh;
+
+}
+
+.job {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1.5em;
+}
+
+.years {
+  /* margin-right: 15%; */
+  width: 15%;
+
+}
+
+.jobTitle {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+
+}
+
+.resumeCategory {
+  margin-bottom: .75em;
+}
+
+.catWithBar {
+
+
+  border-top: 2px solid black
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5em;
+  align-items: end;
+}
+
+.grid-image {
+  width: 100%;
+}
+
+.grid-image-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.test-div {
+  border: 1px solid black;
+  width: 100%;
+  height: 200px;
+}
