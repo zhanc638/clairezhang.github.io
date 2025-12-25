@@ -119,12 +119,12 @@ div.summary {
 
 img {
   width: 100%;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
 video {
   width: 100%;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
 .expand {
@@ -178,10 +178,6 @@ summary {
 
 }
 
-.resumeCategory {
-  margin-bottom: .75em;
-}
-
 .catWithBar {
 
 
@@ -203,12 +199,16 @@ summary {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
-  padding-bottom: 0.5em;
+  /* gap: 0.5em; */
+  /* padding-bottom: 0.5em; */
 }
 
 .test-div {
   border: 1px solid black;
   width: 100%;
   height: 200px;
+}
+
+.mb-15 {
+  margin-bottom: 1.5em;
 }
