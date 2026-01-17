@@ -1,117 +1,121 @@
       * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
 
-        html, body {
-            height: 100%;
-            overflow: hidden;
-            font-family: 'ABC Diatype Mono Light';
-        }
-@font-face {
-    font-family: 'ABC Diatype Mono Bold';
-    src: url('../assets/type/ABCDiatypeMono-Bold.woff2') format('woff2'),
-        url('../assets/type/ABCDiatypeMono-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
+      html,
+      body {
+          height: 100%;
+          overflow: hidden;
+          font-family: 'ABC Diatype Mono Light';
+      }
 
-@font-face {
-    font-family: 'ABC Diatype Mono Regular';
-    src: url('../assets/type/ABCDiatypeMono-Regular.woff2') format('woff2'),
-        url('../assets/type/ABCDiatypeMono-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+      @font-face {
+          font-family: 'ABC Diatype Mono Bold';
+          src: url('../assets/type/ABCDiatypeMono-Bold.woff2') format('woff2'),
+              url('../assets/type/ABCDiatypeMono-Bold.woff') format('woff');
+          font-weight: bold;
+          font-style: normal;
+          font-display: swap;
+      }
 
-@font-face {
-    font-family: 'ABC Diatype Mono Light';
-    src: url('../assets/type/ABCDiatypeMono-Light.woff2') format('woff2'),
-        url('../assets/type/ABCDiatypeMono-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
+      @font-face {
+          font-family: 'ABC Diatype Mono Regular';
+          src: url('../assets/type/ABCDiatypeMono-Regular.woff2') format('woff2'),
+              url('../assets/type/ABCDiatypeMono-Regular.woff') format('woff');
+          font-weight: normal;
+          font-style: normal;
+          font-display: swap;
+      }
 
-@font-face {
-    font-family: 'ABC Diatype Mono ThinItalic';
-    src: url('../assets/type/ABCDiatypeMono-ThinItalic.woff2') format('woff2'),
-        url('../assets/type/ABCDiatypeMono-ThinItalic.woff') format('woff');
-    font-weight: 100;
-    font-style: italic;
-    font-display: swap;
-}
+      @font-face {
+          font-family: 'ABC Diatype Mono Light';
+          src: url('../assets/type/ABCDiatypeMono-Light.woff2') format('woff2'),
+              url('../assets/type/ABCDiatypeMono-Light.woff') format('woff');
+          font-weight: 300;
+          font-style: normal;
+          font-display: swap;
+      }
 
-@font-face {
-    font-family: 'ABC Diatype Mono Thin';
-    src: url('../assets/type/ABCDiatypeMono-Thin.woff2') format('woff2'),
-        url('../assets/type/ABCDiatypeMono-Thin.woff') format('woff');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
+      @font-face {
+          font-family: 'ABC Diatype Mono ThinItalic';
+          src: url('../assets/type/ABCDiatypeMono-ThinItalic.woff2') format('woff2'),
+              url('../assets/type/ABCDiatypeMono-ThinItalic.woff') format('woff');
+          font-weight: 100;
+          font-style: italic;
+          font-display: swap;
+      }
 
-        .video-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-        }
+      @font-face {
+          font-family: 'ABC Diatype Mono Thin';
+          src: url('../assets/type/ABCDiatypeMono-Thin.woff2') format('woff2'),
+              url('../assets/type/ABCDiatypeMono-Thin.woff') format('woff');
+          font-weight: 100;
+          font-style: normal;
+          font-display: swap;
+      }
 
-        .fullscreen-video {
-            width: 100vw;
-            height: 100vh;
-            object-fit: cover;
-            position: absolute;
-            top: 0;
-            left: 0;
-            pointer-events: none; /* Makes video non-clickable */
-        }
+      .video-container {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+      }
 
-        /* Text Overlay Styles */
-        .text-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: left;
-            align-items: left;
-            z-index: 1;
-            pointer-events: none; /* Makes text non-clickable */
-            color: white;
-            text-align: left;
-            padding: 20px;
-        }
+      .fullscreen-video {
+          width: 100vw;
+          height: 100vh;
+          object-fit: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+          pointer-events: none;
+          /* Makes video non-clickable */
+      }
 
-        .description {
-            /*padding-top: 3%;*/
-            font-size: 1.7rem;
-            text-align: justify;
-            /*max-width: 600px;*/
-            line-height: 1.2;
-            font-family: 'ABC Diatype Mono light';
-            opacity: 0.7;
-            transition: all 0.3s ease;
-            pointer-events: auto; /* Enable hover on this element */
-        }
+      /* Text Overlay Styles */
+      .text-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: left;
+          align-items: left;
+          z-index: 1;
+          pointer-events: none;
+          /* Makes text non-clickable */
+          color: white;
+          text-align: left;
+          padding: 20px;
+      }
 
-        /* .description:hover */
-        .description > .hover-object:hover
-        {
-            opacity: 1;
-            color: red;
-    
-        }
+      .description {
+          /*padding-top: 3%;*/
+          font-size: 1.7rem;
+          text-align: justify;
+          /*max-width: 600px;*/
+          line-height: 1.2;
+          font-family: 'ABC Diatype Mono light';
+          opacity: 0.7;
+          transition: all 0.3s ease;
+          pointer-events: auto;
+          /* Enable hover on this element */
+      }
 
-        /* Additional text elements
+      /* .description:hover */
+      .description>.hover-object:hover {
+          opacity: 1;
+          color: red;
+
+      }
+
+      /* Additional text elements
         .corner-text {
             position: fixed;
             top: 30px;
@@ -150,171 +154,186 @@
             text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
         } */
 
-        /* Optional: Video controls overlay (can be removed if not needed) */
-        .video-overlay {
-            position: fixed;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 3;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 10px 20px;
-            border-radius: 25px;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            pointer-events: auto; /* Enable clicking on controls */
-        }
+      /* Optional: Video controls overlay (can be removed if not needed) */
+      .video-overlay {
+          position: fixed;
+          bottom: 20px;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 3;
+          background: rgba(0, 0, 0, 0.5);
+          padding: 10px 20px;
+          border-radius: 25px;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+          pointer-events: auto;
+          /* Enable clicking on controls */
+      }
 
-        .video-overlay:hover {
-            opacity: 1;
-        }
+      .video-overlay:hover {
+          opacity: 1;
+      }
 
-        .video-container:hover .video-overlay {
-            opacity: 1;
-        }
+      .video-container:hover .video-overlay {
+          opacity: 1;
+      }
 
-        .control-btn {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 16px;
-            margin: 0 10px;
-            cursor: pointer;
-            padding: 5px 10px;
-            border-radius: 5px;
-            transition: background 0.3s ease;
-        }
+      .control-btn {
+          background: none;
+          border: none;
+          color: white;
+          font-size: 16px;
+          margin: 0 10px;
+          cursor: pointer;
+          padding: 5px 10px;
+          border-radius: 5px;
+          transition: background 0.3s ease;
+      }
 
-        /* Hide video controls completely (alternative approach) */
-        .fullscreen-video::-webkit-media-controls {
-            display: none !important;
-        }
+      /* Hide video controls completely (alternative approach) */
+      .fullscreen-video::-webkit-media-controls {
+          display: none !important;
+      }
 
-        .fullscreen-video::-moz-media-controls {
-            display: none !important;
-        }
+      .fullscreen-video::-moz-media-controls {
+          display: none !important;
+      }
 
-        .fullscreen-video::-ms-media-controls {
-            display: none !important;
-        }
+      .fullscreen-video::-ms-media-controls {
+          display: none !important;
+      }
 
-        /* Responsive design */
-        @media (max-width: 768px) {
-            .main-title {
-                font-size: 2.5rem;
-            }
-            
-            .subtitle {
-                font-size: 1.2rem;
-            }
-            
-            .description {
-                font-size: 1rem;
-                max-width: 90%;
-            }
-            
-            .corner-text, .bottom-text {
-                font-size: 0.8rem;
-            }
-        }
+      /* Responsive design */
+      @media (max-width: 768px) {
+          .main-title {
+              font-size: 2.5rem;
+          }
 
-        /* Animation for text entrance */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 0.9;
-                transform: translateY(0);
-            }
-        }
+          .subtitle {
+              font-size: 1.2rem;
+          }
 
-        .text-overlay > * {
-            animation: fadeInUp 1s ease-out;
-        }
+          .description {
+              font-size: 1rem;
+              max-width: 90%;
+          }
 
-        /* Prevent text selection */
-        .text-overlay * {
-            user-select: none;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-        }
+          .corner-text,
+          .bottom-text {
+              font-size: 0.8rem;
+          }
+      }
+
+      /* Animation for text entrance */
+      @keyframes fadeInUp {
+          from {
+              opacity: 0;
+              transform: translateY(30px);
+          }
+
+          to {
+              opacity: 0.9;
+              transform: translateY(0);
+          }
+      }
+
+      .text-overlay>* {
+          animation: fadeInUp 1s ease-out;
+      }
+
+      /* Prevent text selection */
+      .text-overlay * {
+          user-select: none;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+      }
 
 
 
-img#image-overlay {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* above: for centering the image, don't change */
-    max-width: 80%;
-    max-height: 60%;
+      img#image-overlay {
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          /* above: for centering the image, don't change */
+          max-width: 80%;
+          max-height: 60%;
 
-    object-fit: contain;
+          object-fit: contain;
 
-    z-index: 2;
-    pointer-events: none;
-    
+          z-index: 2;
+          pointer-events: none;
 
-    display: none;
-}
 
-#test-link {
-    position: fixed;
-    bottom: 20px;
-    left: 0%;
-    padding-left: 20px;
-    color: white;
-    font-size: 1rem;
-    text-decoration: none;
-    z-index: 3;
-    cursor: pointer;
-    pointer-events: auto;
-}
-#test-link:hover {
-    color: red;
-}
-#caption {
-    position: fixed;
-    bottom: 20px;
-    right: 0%;
-    padding-right: 20px;
-    color: white;
-    font-size: 1rem;
-    text-decoration: none;
-    z-index: 3;
-    pointer-events: auto;
-}
+          display: none;
+      }
 
-#play-audio-button {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, calc(-50% + 20px));
-    font-size: 1.7rem;
-    color: white;
-    cursor: pointer;
-    z-index: 1000;
-    transition: opacity 0.8s ease, transform 0.8s ease, color 0.3s ease;
-}
+      #test-link {
+          position: fixed;
+          bottom: 20px;
+          left: 0%;
+          padding-left: 20px;
+          color: white;
+          font-size: 1rem;
+          text-decoration: none;
+          z-index: 3;
+          cursor: pointer;
+          pointer-events: auto;
+      }
 
-#play-audio-button.visible {
-    transform: translate(-50%, -50%);
-}
+      #test-link:hover {
+          color: red;
+      }
 
-#play-audio-button:hover {
-    color: red;
-}
+      #caption {
+          position: fixed;
+          bottom: 20px;
+          right: 0%;
+          padding-right: 20px;
+          color: white;
+          font-size: 1rem;
+          text-decoration: none;
+          z-index: 3;
+          pointer-events: auto;
+      }
 
-#play-audio-button.hidden {
-    opacity: 0;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-}
-/* Audio Button Styles
+      #play-audio-button {
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, calc(-50% + 20px));
+          font-size: 1.7rem;
+          color: white;
+          cursor: pointer;
+          z-index: 1000;
+          transition: opacity 0.8s ease, transform 0.8s ease, color 0.3s ease;
+      }
+
+      #play-audio-button.visible {
+          transform: translate(-50%, -50%);
+      }
+
+      #play-audio-button:hover {
+          color: red;
+      }
+
+      #play-audio-button.hidden {
+          opacity: 0;
+          pointer-events: none;
+          transform: translate(-50%, -50%);
+      }
+
+      a {
+          text-decoration: none;
+          color: white;
+      }
+
+      a:hover {
+          color: red;
+      }
+
+      /* Audio Button Styles
 #audio-button {
     position: fixed;
     z-index: 3;
