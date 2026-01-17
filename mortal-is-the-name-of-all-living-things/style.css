@@ -324,12 +324,13 @@
           transform: translate(-50%, -50%);
       }
 
-      a {
+      #home-link {
           text-decoration: none;
           color: white;
       }
 
-      a:hover {
+      #home-link:hover {
+          text-decoration: none;
           color: red;
       }
 
